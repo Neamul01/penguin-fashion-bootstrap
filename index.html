@@ -11,36 +11,43 @@
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light" style=" background-color:#FFFBF0">
-            <div class="container">
-                <a class="navbar-brand" href="#">
-                    <img src="images/logo.png" alt="" width="292" height="40">
+        <!-- nav bar  -->
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top" style=" background-color:#FFFBF0">
+            <div class="container flex-row">
+                <a class="navbar-brand w-75" href="#">
+                    <img class="mw-100" width="290px" src="images/logo.png" alt="">
                 </a>
-
+                <button class="navbar-toggler " type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link active ms-5 color-dark" aria-current="page" href="#">Home</a>
+                    <ul class="navbar-nav ms-auto mb-lg-0 align-items-center">
+                        <li class="nav-item" style="width: 115px;">
+                            <a class="nav-link active  color-dark fw-bold" aria-current="page" href="#">Home</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link ms-5 color-dark tw-bold" href="#">Product</a>
+                        <li class="nav-item" style="width: 135px;">
+                            <a class="nav-link color-dark fw-bold" href="#product">Product</a>
                         </li>
 
-                        <li class="nav-item">
-                            <a class="nav-link ms-5" href="#">About Us</a>
+                        <li class="nav-item " style="width: 135px;">
+                            <a class="nav-link fw-bold" href="#women-jacket">Women jacket</a>
                         </li>
-                        <li class="nav-item ms-5">
-                            <a class="nav-link" href="#">Contact Us</a>
+                        <li class="nav-item " style="width: 135px;">
+                            <a class="nav-link fw-bold" href="#men-jacket">Men jacket</a>
+                        </li>
+                        <li class="nav-item " style="width: 135px;">
+                            <a class="nav-link fw-bold" href="#find-more">Find More</a>
                         </li>
                     </ul>
 
                 </div>
             </div>
         </nav>
-    </header>
-    <main>
+
         <!-- banner area  -->
-        <section class="container-fluid banner-area mb-5" style=" background-color:#FFFBF0">
+        <section class="container-fluid banner-area  my-5 py-5" id="product" style=" background-color:#FFFBF0">
             <div class="container">
                 <div class="d-flex align-items-center row">
                     <div class="col-lg-6 mb-5">
@@ -57,9 +64,12 @@
                 </div>
             </div>
         </section>
+    </header>
+    <main>
+
 
         <!-- women jacket -->
-        <section class="container mb-5">
+        <section class="container mb-5" id="women-jacket">
             <h2>Women Jacket</h2>
             <div class="row justify-content-between mt-5">
                 <div class="card col-lg-4 shadow-lg  border-0" style="width: 22rem;">
@@ -124,10 +134,10 @@
 
 
         <!-- Mens jacket -->
-        <section class="container mb-5">
+        <section class="container mb-5" id="men-jacket">
             <h2>Mens Jacket</h2>
-            <div class="row justify-content-between mt-5">
-                <div class="card col-lg-4 shadow-lg  border-0" style="width: 22rem;">
+            <div class="row justify-content-between mt-5 ">
+                <div class="card col-lg-4 col-12 shadow-lg  border-0" style="width: 22rem;">
                     <div style="background-color: #f1f1f1;" class="mt-2">
                         <img src="images/jacket-4.png" class="card-img-top w-75 my-2 ms-5" alt="...">
                     </div>
@@ -146,7 +156,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="card col-lg-4 shadow-lg border-0" style="width: 22rem;">
+                <div class="card col-lg-4 col-12 shadow-lg border-0" style="width: 22rem;">
                     <div style="background-color: #f1f1f1;" class="mt-2">
                         <img src="images/jacket-5.png" class="card-img-top w-75 my-2 ms-5" alt="...">
                     </div>
@@ -165,7 +175,7 @@
                     </div>
                 </div>
 
-                <div class="card col-lg-4 shadow-lg  border-0" style="width: 22rem;">
+                <div class="card col-lg-4 col-12 shadow-lg  border-0" style="width: 22rem;">
                     <div style="background-color: #f1f1f1;" class="mt-2">
                         <img src="images/jacket-6.png" class="card-img-top w-75 my-2 ms-5" alt="...">
                     </div>
@@ -189,9 +199,9 @@
 
         <!-- last section  -->
 
-        <section class="container my-5">
+        <section class="container mb-5 pt-5" id="find-more">
             <div class="row gx-5">
-                <div class="col-lg-5">
+                <div class="col-lg-5 col-12 order-2 order-lg-1">
                     <div class="d-flex shadow-sm p-4 rounded-3 ">
                         <img class=" me-4" height="82" width="78" src="icons/image 12.png" alt="">
                         <div>
@@ -220,7 +230,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-7">
+                <div class="col-lg-7 col-12 order-1 order-lg-2 mb-4">
                     <img class="img-fluid" src="images/shopping.png" alt="">
                 </div>
             </div>
